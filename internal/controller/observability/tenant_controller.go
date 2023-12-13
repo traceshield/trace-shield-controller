@@ -39,8 +39,8 @@ import (
 
 	"github.com/go-logr/logr"
 	reconcilehelper "github.com/pluralsh/controller-reconcile-helper/pkg/reconcile-helper/core"
-	observabilityv1alpha1 "github.com/pluralsh/trace-shield-controller/api/observability/v1alpha1"
-	"github.com/pluralsh/trace-shield-controller/clients/keto"
+	observabilityv1alpha1 "github.com/traceshield/trace-shield-controller/api/observability/v1alpha1"
+	"github.com/traceshield/trace-shield-controller/clients/keto"
 )
 
 // TenantReconciler reconciles a Tenant object

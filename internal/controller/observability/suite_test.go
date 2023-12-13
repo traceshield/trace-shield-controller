@@ -30,7 +30,7 @@ import (
 	logf "sigs.k8s.io/controller-runtime/pkg/log"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	observabilityv1alpha1 "github.com/pluralsh/trace-shield-controller/api/observability/v1alpha1"
+	observabilityv1alpha1 "github.com/traceshield/trace-shield-controller/api/observability/v1alpha1"
 	//+kubebuilder:scaffold:imports
 )
 

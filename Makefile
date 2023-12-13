@@ -124,20 +124,20 @@ undeploy: ## Undeploy controller from the K8s cluster specified in ~/.kube/confi
 
 .PHONY: run-client-gen
 run-client-gen: client-gen
-	$(CLIENT_GEN) --clientset-name versioned --input-base github.com/pluralsh/trace-shield-controller/api --input observability/v1alpha1 --output-package github.com/pluralsh/trace-shield-controller/generated/client/clientset --go-header-file hack/boilerplate.go.txt
+	$(CLIENT_GEN) --clientset-name versioned --input-base github.com/traceshield/trace-shield-controller/api --input observability/v1alpha1 --output-package github.com/traceshield/trace-shield-controller/generated/client/clientset --go-header-file hack/boilerplate.go.txt
 
 .PHONY: run-lister-gen
 run-lister-gen: lister-gen
-	$(LISTER_GEN) --input-dirs github.com/pluralsh/trace-shield-controller/api/observability/v1alpha1 --output-package github.com/pluralsh/trace-shield-controller/generated/client/listers --go-header-file hack/boilerplate.go.txt
+	$(LISTER_GEN) --input-dirs github.com/traceshield/trace-shield-controller/api/observability/v1alpha1 --output-package github.com/traceshield/trace-shield-controller/generated/client/listers --go-header-file hack/boilerplate.go.txt
 
 .PHONY: run-informer-gen
 run-informer-gen: informer-gen
-	$(INFORMER_GEN) --input-dirs github.com/pluralsh/trace-shield-controller/api/observability/v1alpha1  --versioned-clientset-package github.com/pluralsh/trace-shield-controller/generated/client/clientset/versioned --listers-package github.com/pluralsh/trace-shield-controller/generated/client/listers --output-package github.com/pluralsh/trace-shield-controller/generated/client/informers --go-header-file hack/boilerplate.go.txt
+	$(INFORMER_GEN) --input-dirs github.com/traceshield/trace-shield-controller/api/observability/v1alpha1  --versioned-clientset-package github.com/traceshield/trace-shield-controller/generated/client/clientset/versioned --listers-package github.com/traceshield/trace-shield-controller/generated/client/listers --output-package github.com/traceshield/trace-shield-controller/generated/client/informers --go-header-file hack/boilerplate.go.txt
 
 .PHONY: generate-client
 generate-client: run-client-gen run-lister-gen run-informer-gen
 	rm -rf generated
-	mv github.com/pluralsh/trace-shield-controller/generated generated
+	mv github.com/traceshield/trace-shield-controller/generated generated
 	rm -rf github.com
 
 ##@ Build Dependencies

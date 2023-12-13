@@ -32,9 +32,9 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/healthz"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	observabilityv1alpha1 "github.com/pluralsh/trace-shield-controller/api/observability/v1alpha1"
-	"github.com/pluralsh/trace-shield-controller/clients/keto"
-	observabilitycontroller "github.com/pluralsh/trace-shield-controller/internal/controller/observability"
+	observabilityv1alpha1 "github.com/traceshield/trace-shield-controller/api/observability/v1alpha1"
+	"github.com/traceshield/trace-shield-controller/clients/keto"
+	observabilitycontroller "github.com/traceshield/trace-shield-controller/internal/controller/observability"
 	//+kubebuilder:scaffold:imports
 )
 
