@@ -10,7 +10,7 @@ require (
 	github.com/ory/x v0.0.568
 	github.com/pluralsh/controller-reconcile-helper v0.1.0
 	golang.org/x/oauth2 v0.10.0
-	google.golang.org/grpc v1.56.2
+	google.golang.org/grpc v1.56.3
 	k8s.io/api v0.27.3
 	k8s.io/apimachinery v0.27.3
 	k8s.io/client-go v0.27.3
