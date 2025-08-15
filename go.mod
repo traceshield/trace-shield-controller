@@ -1,6 +1,6 @@
 module github.com/traceshield/trace-shield-controller
 
-go 1.20
+go 1.23.0
 
 require (
 	github.com/go-logr/logr v1.2.4
@@ -9,7 +9,7 @@ require (
 	github.com/ory/keto/proto v0.11.1-alpha.0
 	github.com/ory/x v0.0.568
 	github.com/pluralsh/controller-reconcile-helper v0.1.0
-	golang.org/x/oauth2 v0.10.0
+	golang.org/x/oauth2 v0.27.0
 	google.golang.org/grpc v1.56.2
 	k8s.io/api v0.27.3
 	k8s.io/apimachinery v0.27.3
@@ -28,7 +28,7 @@ require (
 
 require (
 	cloud.google.com/go/compute v1.20.1 // indirect
-	cloud.google.com/go/compute/metadata v0.2.3 // indirect
+	cloud.google.com/go/compute/metadata v0.3.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cenkalti/backoff v2.2.1+incompatible // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
