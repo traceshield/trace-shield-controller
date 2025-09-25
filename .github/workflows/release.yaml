@@ -19,7 +19,7 @@ jobs:
     - name: 'Setup Node'
       uses: actions/setup-node@v3
       with:
-        node-version: 18.12.1
+        node-version: 18.20.8
     - name: Semantic Release
       uses: cycjimmy/semantic-release-action@v3
       env:
